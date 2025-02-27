@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> COLOMBIA GOLD DA MASSA A 20$ Moving Background</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #012;
+        }
+
+        #moving-text {
+            position: fixed;
+            white-space: nowrap;
+            font-size: 150px;
+            color: rgba(255, 255, 255, 30.0);
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+            animation: move 30s linear infinite;
+            user-select: none;
+        }
+
+        @keyframes move {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100vw); }
+        }
+    </style>
+</head>
+<body>
+    <div id="moving-text">COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$</div>
+
+    <script>
+        // Preencher a tela com mais textos "COLOMBIA GOLD DA MASSA A 20$"
+        const movingText = document.getElementById('moving-text');
+        const repetitions = Math.floor(window.innerWidth / 100);
+        movingText.textContent = ' COLOMBIA GOLD DA MASSA A 20$'.repeat(repetitions);
+    </script>
+</body>
+</html>
