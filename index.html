@@ -1,39 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
-    <title> COLOMBIA GOLD DA MASSA A 20$ Moving Background</title>
-    <style>
-        body {
-            margin: 0;
-            overflow: hidden;
-            background-color: #012;
-        }
-
-        #moving-text {
-            position: fixed;
-            white-space: nowrap;
-            font-size: 150px;
-            color: rgba(255, 255, 255, 30.0);
-            font-weight: bold;
-            font-family: Arial, sans-serif;
-            animation: move 30s linear infinite;
-            user-select: none;
-        }
-
-        @keyframes move {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100vw); }
-        }
-    </style>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
 <body>
-    <div id="moving-text">COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$ COLOMBIA GOLD DA MASSA A 20$</div>
-
-    <script>
-        // Preencher a tela com mais textos "COLOMBIA GOLD DA MASSA A 20$"
-        const movingText = document.getElementById('moving-text');
-        const repetitions = Math.floor(window.innerWidth / 100);
-        movingText.textContent = ' COLOMBIA GOLD DA MASSA A 20$'.repeat(repetitions);
-    </script>
+    <h1>Músicas Favoritas</h1>
+    <form method="post" action="https://formtester.goodbytes.be/post.php">
+        <input type='text' id="nomeMusica" name="nomeMusica" />
+    </form>
 </body>
 </html>
